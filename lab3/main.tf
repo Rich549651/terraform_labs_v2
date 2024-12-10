@@ -13,6 +13,9 @@ provider "azurerm" {
   features {}
 }
 
+data "azurerm_subscription" "current" {
+}
+
 resource "azurerm_resource_group" "RG3" {
   name     = "RG3"
   location = "West Europe"
